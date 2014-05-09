@@ -1,4 +1,4 @@
-# The official raywenderlich.com Objective-C style guide.
+# DAV Objective-C style guide.
 
 This style guide outlines the coding conventions for raywenderlich.com.
 
@@ -74,7 +74,7 @@ UIColor *myColour = [UIColor whiteColor];
 Use `#pragma mark -` to categorize methods in functional groupings and protocol/delegate implementations following this general structure.
 
 ```objc
-#pragma mark - Lifecycle
+#pragma mark - Lifecycle -
 
 - (instancetype)init {}
 - (void)dealloc {}
@@ -82,20 +82,22 @@ Use `#pragma mark -` to categorize methods in functional groupings and protocol/
 - (void)viewWillAppear:(BOOL)animated {}
 - (void)didReceiveMemoryWarning {}
 
-#pragma mark - Custom Accessors
+#pragma mark - Custom Accessors -
 
 - (void)setCustomProperty:(id)value {}
 - (id)customProperty {}
 
-#pragma mark - IBActions
+#pragma mark - IBActions -
 
 - (IBAction)submitData:(id)sender {}
 
-#pragma mark - Public
+#pragma mark - Delegate Methods -
+
+#pragma mark - Public -
 
 - (void)publicMethod {}
 
-#pragma mark - Private
+#pragma mark - Private -
 
 - (void)privateMethod {}
 
@@ -104,11 +106,11 @@ Use `#pragma mark -` to categorize methods in functional groupings and protocol/
 #pragma mark - UITableViewDataSource
 #pragma mark - UITableViewDelegate
 
-#pragma mark - NSCopying
+#pragma mark - NSCopying -
 
 - (id)copyWithZone:(NSZone *)zone {}
 
-#pragma mark - NSObject
+#pragma mark - NSObject - 
 
 - (NSString *)description {}
 ```
